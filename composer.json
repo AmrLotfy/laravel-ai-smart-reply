@@ -1,21 +1,42 @@
 {
-  "name": "amrlotfy/laravel-ai-smart-reply",
-  "description": "Laravel package to generate AI smart replies (supports OpenAI and OpenRouter).",
-  "type": "library",
-  "license": "MIT",
-  "authors": [
-    {
-      "name": "Amr Lotfy",
-      "email": "amrlotfy07@gmail.com"
-    }
-  ],
-  "require": {
-    "php": "^8.1",
-    "illuminate/support": "^10.0|^11.0"
-  },
-  "autoload": {
-    "psr-4": {
-      "AmrLotfy\\AiSmartReply\\": "src/"
-    }
-  }
+    "name": "amrlotfy/laravel-ai-smart-reply",
+    "description": "Smart, multilingual AI-powered reply generator for any CRM / ERP / Support system built with Laravel. Supports OpenAI and OpenRouter, with Arabic and English responses.",
+    "keywords": [
+        "laravel",
+        "ai",
+        "openai",
+        "automation",
+        "crm",
+        "support",
+        "chatbot",
+        "reply-generator",
+        "openrouter"
+    ],
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Amr Lotfy",
+            "email": "amrlotfy07@gmail.com",
+            "homepage": "https://www.linkedin.com/in/amr-lotfy-saleh-09438b113/"
+        }
+    ],
+    "require": {
+        "php": "^8.0",
+        "illuminate/support": "^8.0|^9.0|^10.0|^11.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "AmrLotfy\\AiSmartReply\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "AmrLotfy\\AiSmartReply\\AiSmartReplyServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
 }
